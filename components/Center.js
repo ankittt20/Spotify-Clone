@@ -47,14 +47,14 @@ const Center = () => {
         </div>
       </header>
       <section
-        className={`flex items-end space-x-7 bg-gradient-to-b to-black ${color} h-96 text-white p-10`}
+        className={`md:flex items-end space-x-7 bg-gradient-to-b to-black ${color} md:h-96 text-white p-10 `}
       >
-        <img className="h-64 w-64 shadow-5xl " src={playlist?.images?.[0]?.url} alt="" />
-        <div>
+        <img className="h-72 w-72  sm:h-64 sm:w-64 shadow-5xl mx-auto sm:mx-0 mt-12 sm:mt-0" src={playlist?.images?.[0]?.url} alt="" />
+        <div className="mt-5 sm:mt-0">
           <p>
             PUBLIC PLAYLIST
           </p>
-          <h1 className="text-2xl h md:text-3xl xl:text-5xl font-bold">{playlist?.name}</h1>
+          <h1 className="text-2xl h sm:text-sm md:text-3xl xl:text-5xl font-bold">{playlist?.name}</h1>
         </div>
       </section>
       <div>
